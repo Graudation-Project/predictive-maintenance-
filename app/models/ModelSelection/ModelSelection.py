@@ -5,6 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 import time
 from datetime import datetime
 import tensorflow as tf
+from keras import Sequential
 import numpy as np
 class ModelSelection:
     def __init__(self,data):
@@ -130,6 +131,9 @@ class ModelSelection:
             self.metrics["Random Forest Regressor"]["Latency"] = latency
             self.logs.write(f"Calculating Metrices Finished.. {datetime.now()}")
             self.logs.write(f"Result Model... {datetime.now()}\n{self.metrics["Random Forest Regressor"]}")
+
+            # Deep Learning
+            
             
 
 
